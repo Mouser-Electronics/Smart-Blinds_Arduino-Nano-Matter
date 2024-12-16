@@ -10,11 +10,16 @@ When working with Arduino Matter libraries, compiling the sketches can be time-c
 **Connecting to Alexa - Key Troubleshooting Steps**
 
 If you encounter difficulties connecting the Arduino Nano Matter board to the Alexa app, follow these troubleshooting steps to resolve the issues:
-Decommission the Matter device: If your device was previously commissioned, ensure you upload code to decommission it. This is crucial for resetting the connection.
-Burn the bootloader: After decommissioning, use the Silicon Labs Simplicity Bootloader to burn the bootloader onto the board. 
-Reset the Amazon Echo: Before reconnecting the Arduino board to the Alexa app, reset your Echo hub to renew the connection.
-Reconnect to Alexa: If the device still fails to connect, repeat steps 1–3, as missing any step can prevent successful pairing.
-Network credentials: If the Alexa app prompts you for network credentials, this likely means the device was not fully decommissioned. Follow the decommissioning steps again.
+
+* Decommission the Matter device: If your device was previously commissioned, ensure you upload code to decommission it. This is crucial for resetting the connection.
+
+* Burn the bootloader: After decommissioning, use the Silicon Labs Simplicity Bootloader to burn the bootloader onto the board. 
+
+* Reset the Amazon Echo: Before reconnecting the Arduino board to the Alexa app, reset your Echo hub to renew the connection.
+
+* Reconnect to Alexa: If the device still fails to connect, repeat steps 1–3, as missing any step can prevent successful pairing.
+
+* Network credentials: If the Alexa app prompts you for network credentials, this likely means the device was not fully decommissioned. Follow the decommissioning steps again.
 
 Note: The Matter-generated code for your device remains the same regardless of resetting or re-uploading. Once the QR code is generated, you can save and reuse it, as it will be associated with your specific Arduino Nano board.
 
